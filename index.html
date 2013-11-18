@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset="utf-8">
+	<title>Bisu</title>
+	<link rel="stylesheet" href="lib/pure-min.css"/>
+	<link rel="stylesheet" href="main.css"/>
+</head>
+<body>
+	<div id='content'></div>
+
+	<script src="js/require.js"></script>
+	<script> require(['js/req_main']); </script>
+
+	<script type="text/template" id="default_tpl">
+	  	<div class="tabset pure-menu pure-menu-horizontal pure-menu-open">
+			<ul>
+				<li>
+					<div class="tabh hblue open" id='vo_id'>Void</div>
+				</li>
+				<li>
+					<div class="tabh hblue" id='diary'>Diary</div>
+				</li>
+				<li>
+					<div class="tabh hblue" id='streak'>Streak</div>
+				</li>
+			</ul>
+		</div>
+		<div class='tabbodies'>
+	  		<div id="tabbody"></div>
+		</div>
+		<div id='input' tog='0'></div>
+	</script>
+
+	<script type="text/template" id="void_tpl">
+	  	<div id="day"></div>
+	  	<div id="report">Most: <%= most %><br>Little: <%= little %><br>Least: <%= least %><br>Move: <%= action %></div>
+	  	<div style='text-align: center'>
+	  		<div id="msg">Get your rest.</div>
+	  		<div id="passage">
+			In the Void is Good but no Evil.<br>
+	      	Wisdom is Existence.<br>
+			Principle is Existence.<br>
+			The Way is Existence.<br>
+			Mind is Emptiness.<br>
+			</div>
+	  	</div>
+	</script>
+
+	<script type="text/template" id="input_tpl">
+    	<input class="pure-u-1-5" id="l_entry" type="text" placeholder="Learn">
+  		<input class="pure-u-1-5" id="w_entry" type="text" placeholder="Work">
+    	<input class="pure-u-1-5" id="p_entry" type="text" placeholder="Play">
+    	<input class="pure-u-1-5" id="g_entry" type="text" placeholder="Grade">
+    	<input id="lifted" type="checkbox">
+    	<textarea class="pure-u-1" id='d_entry'></textarea>
+  	</script>
+
+	<script type="text/template" id="d_tpl">
+    	<ul id="diary-list"></ul>
+  	</script>
+
+  	<script type="text/template" id="d_entry_tpl">
+    	<div><%= entry %></div>
+  	</script>
+
+  	<script type="text/template" id="s_entry_tpl">
+    	<%= entry %>
+  	</script>
+</body>
+</html>
+
