@@ -5,8 +5,8 @@ bisu in the browser :) , using backbone (and backbone.localStorage), require, jq
 
 Basically, in exchange for an entry a day, the program will hold your diary, form a seinfeld chain (don't break it), and balance your work vs learning vs play. The proportions I'm using are  
 	
-	* play : (work+learn) is 1 : 4
-    * learn : work is 2 : 3
+	play : (work+learn) is 1 : 4
+    learn : work is 2 : 3
 
 ...but it's easy to change if you want a different balance.
 
@@ -14,16 +14,16 @@ Currently it's a standalone version, storing the data in localStorage as JSON (f
 
 Although tabbing works with a mouse, it's meant to be used completely with the keyboard (as currently envisioned). The controls are:
 	
-	* ctrl+leftkey to tableft
-	* ctrl+rightkey to tabright
-	* ctrl+i to input
-		* shift+enter from within the input view to submit
+	ctrl+leftkey to tableft
+	ctrl+rightkey to tabright
+	ctrl+i to input
+		shift+enter from within the input view to submit
 
 There's a lot missing for the void tab, and some of it needs to be tightened (e.g. validation), but the core is working.
 
 Future:
 	
-	* countdown items (e.g. 25 days until X)
-	* vim keybindings
-	* to-do pad
-	* styling (background will be dark, views light)
+	countdown items (e.g. 25 days until X)
+	vim keybindings
+	to-do pad
+	styling (background will be dark, views light)
