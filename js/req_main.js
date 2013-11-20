@@ -35,6 +35,5 @@ require([
         window.Bisu = {};
         window.Bisu.App = new (require('main2'))();
         Backbone.history.start();
-        //testing
-    }
+        //testing1
 );
